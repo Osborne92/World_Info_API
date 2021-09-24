@@ -22,7 +22,7 @@ public class CountryController {
 
     @GetMapping()
     public Iterable<Country> getAllCountries() {
-        return countryRepository.findAll();
+        return this.countryRepository.findAll();
     }
 
     @GetMapping("/{id}")
