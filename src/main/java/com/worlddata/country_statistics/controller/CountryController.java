@@ -1,19 +1,18 @@
 package com.worlddata.country_statistics.controller;
 
 import java.lang.Iterable;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PutMapping;
-//import org.springframework.web.bind.annotation.RequestParam;
 
 import com.worlddata.country_statistics.entities.Country;
 import com.worlddata.country_statistics.repository.CountryRepository;
 
 @RestController
+@RequestMapping("/countries")
 public class CountryController {
     private final CountryRepository countryRepository;
 
@@ -21,48 +20,48 @@ public class CountryController {
         this.countryRepository = countryRepository;
     }
 
-    @GetMapping("/countries")
+    @GetMapping()
     public Iterable<Country> getAllCountries() {
         return countryRepository.findAll();
     }
 
-    @GetMapping("/countries/{id}")
+    @GetMapping("/{id}")
     public Optional<Country> getCountryById(@PathVariable("id") Integer id) {
         return this.countryRepository.findById(id);
     }
 
-    @GetMapping("/countries/name/{name}")
+    @GetMapping("/name/{name}")
     public List<Country> getCountryByName(@PathVariable("name") String name) {
         return this.countryRepository.findByName(name);
     }
 
-    @GetMapping("/countries/population")
+    @GetMapping("/population")
     public Iterable<Country> getCountriesByPopulation() {
         return this.countryRepository.findAllByOrderByPopulationDesc();
     }
 
-    @GetMapping("/countries/happiness")
+    @GetMapping("/happiness")
     public Iterable<Country> getCountriesByHappiness() {
         return this.countryRepository.findAllByOrderByHappinessIndexDesc();
     }
 
-    @GetMapping("/countries/gdp")
+    @GetMapping("/gdp")
     public Iterable<Country> getCountriesByGdp() {
         return this.countryRepository.findAllByOrderByGDPDesc();
     }
 
-    @GetMapping("/countries/crime")
+    @GetMapping("/crime")
     public Iterable<Country> getCountriesByCrimeIndex() {
         return this.countryRepository.findAllByOrderByCrimeIndexAsc();
     }
 
-    @PostMapping("/countries")
+    @PostMapping()
     public Country createNewCountry(@RequestBody Country country) {
         Country newCountry = this.countryRepository.save(country);
         return newCountry;
     }
 
-    @PutMapping("/countries/{id}")
+    @PutMapping("/{id}")
     public Country updateCountry(@PathVariable("id") Integer id, @RequestBody Country c) {
         Optional<Country> countryToUpdateOptional = this.countryRepository.findById(id);
         if (!countryToUpdateOptional.isPresent()) {
@@ -94,7 +93,7 @@ public class CountryController {
         return updateCountry;
     }
 
-    @DeleteMapping("/countries/{id}")
+    @DeleteMapping("/{id}")
     public Country deleteCountry(@PathVariable("id") Integer id) {
         Optional<Country> countryToDeleteOption = this.countryRepository.findById(id);
 
