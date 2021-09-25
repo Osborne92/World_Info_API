@@ -16,8 +16,8 @@ import com.worlddata.country_statistics.repository.CountryRepository;
 public class CountryController {
     private final CountryRepository countryRepository;
 
-    public CountryController(final CountryRepository countryRepository) {
-        this.countryRepository = countryRepository;
+    public CountryController(final CountryRepository Banana) {
+        this.countryRepository = Banana;
     }
 
     @GetMapping()
