@@ -58,8 +58,8 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Dane Christensen - danechristensen92@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/Osborne92/World_Info_API](https://github.com/Osborne92/World_Info_API)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
