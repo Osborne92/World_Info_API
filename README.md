@@ -56,6 +56,30 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+1. In your terminal, type in ./mvnw spring-boot:run (for Windows, use mvnw spring-boot:run)
+  ```sh
+   ./mvnw spring-boot:run
+   ```
+2. In another terminal, enter any command seen in the controller file. Examples below.
+  Retrieves all countries
+  ```sh
+   curl GET "localhost:3000/countries"
+   ```
+   
+   Retrieve specific country
+  ```sh
+   curl GET "localhost:3000/countries/name/Finland"
+   ```
+   
+   Retrieve country by happinessIndex
+  ```sh
+   curl GET "localhost:3000/countries/happiness"
+   ```
+   
+   Retrieve country by gdp
+  ```sh
+   curl GET "localhost:3000/countries/gdp"
+   ```
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
