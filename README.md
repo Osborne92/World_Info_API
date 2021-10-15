@@ -6,9 +6,6 @@
 What contributes to happiness? With this API, draw correlations between societal and economic variables that impact happiness. This project has basic information of the 20 most happy countries. Find for yourself which variables correlate with happiness and which variables don't!
 
 ### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
 * [Java](https://www.java.com/en/)
 * [Spring](https://spring.io/)
 * [SQL](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
