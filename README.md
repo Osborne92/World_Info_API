@@ -60,7 +60,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
   ```sh
    ./mvnw spring-boot:run
    ```
-2. In another terminal, enter any command seen in the controller file. Examples: Retrieves all countries
+2. In another terminal, enter any command seen in the controller file. Examples: Retrieve all countries
   ```sh
    curl GET "localhost:3000/countries"
    ```
