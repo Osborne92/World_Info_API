@@ -13,19 +13,12 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * [Spring](https://spring.io/)
 * [SQL](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
 <!-- GETTING STARTED -->
 ### Installation
 1. Simply clone the repo
    ```sh
    git clone git@github.com:Osborne92/World_Info_API.git
    ```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -53,13 +46,9 @@ This section should list any major frameworks/libraries used to bootstrap your p
    curl GET "localhost:3000/countries/gdp"
    ```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 <!-- CONTACT -->
 ## Contact
 
 Dane Christensen - danechristensen92@gmail.com
 
 Project Link: [https://github.com/Osborne92/World_Info_API](https://github.com/Osborne92/World_Info_API)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
