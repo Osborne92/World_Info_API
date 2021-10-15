@@ -45,17 +45,9 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 <!-- GETTING STARTED -->
 ### Installation
-1. Clone the repo
+1. Simply clone the repo
    ```sh
    git clone git@github.com:Osborne92/World_Info_API.git
-   ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
-3. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
